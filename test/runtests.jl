@@ -2,5 +2,5 @@ using QCBase
 using Test
 
 @testset "QCBase.jl" begin
-    # Write your tests here.
+    include("test_MOCluster.jl")
 end
