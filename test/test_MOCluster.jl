@@ -22,8 +22,6 @@ using Test
     clusters1 = [MOCluster(i, collect(clusters[i])) for i = 1:length(clusters)]
     clusters2 = [MOCluster(i, clusters[i]) for i = 1:length(clusters)]
 
-    @test all([clusters1[i] == clusters2[i] for i in 1:length(clusters)])
-    display(clusters1)
 
     display(length(clusters1[1]))
     @test length(clusters1[1]) == 2

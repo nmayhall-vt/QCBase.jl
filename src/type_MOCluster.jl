@@ -1,20 +1,17 @@
 
 
 """
-    idx::Int
-    orb_list::Vector{Int}
-"""
-struct MOCluster{N}
     idx::UInt16
-    orb_list::SVector{N, UInt16}
+    orb_list::Vector{UInt16}
+"""
+struct MOCluster
+    idx::UInt16
+    orb_list::Vector{UInt16}
 end
 
 
 function MOCluster(ci::Integer, c::UnitRange{<:Integer})
-    return MOCluster{length(c)}(ci, collect(c))
-end
-function MOCluster(ci::Integer, c::Vector{<:Integer})
-    return MOCluster{length(c)}(ci, c)
+    return MOCluster(ci, collect(c))
 end
 
 
@@ -46,7 +43,7 @@ function dim_tot(c::MOCluster, na, nb)
     T = eltype(nc)
     return binomial(nc, T(na))*binomial(nc, T(nb)) 
 end
-function Base.display(cv::Vector{MOCluster{N}}) where N
+function Base.display(cv::Vector{MOCluster}) where N
     for c in cv
         display(c)
     end
