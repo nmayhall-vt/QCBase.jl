@@ -16,9 +16,11 @@ export MOCluster
 n_orb() = nothing
 dim_tot() = nothing
 write_xyz() = nothing
+compute_energy() = nothing
 
 export n_orb
 export dim_tot
 export write_xyz
+export compute_energy 
 
 end
