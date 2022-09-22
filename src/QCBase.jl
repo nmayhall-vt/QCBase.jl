@@ -17,10 +17,13 @@ n_orb() = nothing
 dim_tot() = nothing
 write_xyz() = nothing
 compute_energy() = nothing
+orbital_rotation() = nothing
+
 
 export n_orb
 export dim_tot
 export write_xyz
 export compute_energy 
+export orbital_rotation 
 
 end
