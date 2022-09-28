@@ -1,12 +1,12 @@
 
 
 """
-    idx::UInt16
-    orb_list::Vector{UInt16}
+    idx::Int16
+    orb_list::Vector{Int16}
 """
 struct MOCluster
-    idx::UInt16
-    orb_list::Vector{UInt16}
+    idx::Int16
+    orb_list::Vector{Int16}
 end
 
 
