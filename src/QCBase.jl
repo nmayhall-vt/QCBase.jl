@@ -25,5 +25,6 @@ export dim_tot
 export write_xyz
 export compute_energy 
 export orbital_rotation 
+export possible_focksectors
 
 end
